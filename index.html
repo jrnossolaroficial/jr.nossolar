@@ -1,190 +1,102 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loja Virtual</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-    }
-    header {
-      background: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .banner {
-      background: linear-gradient(90deg, #444, #000);
-      color: #fff;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .btn {
-      background: #000;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-    footer {
-      background: #222;
-      color: #ccc;
-      padding: 20px;
-      text-align: center;
-      margin-top: 40px;
-    }
-  <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loja Virtual</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f5f5f5;
-    }
-    header {
-      background: #000;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    .banner {
-      background: linear-gradient(90deg, #444, #000);
-      color: #fff;
-      padding: 80px 20px;
-      text-align: center;
-    }
-    .produtos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .card img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    .btn {
-      background: #000;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-    footer {
-      background: #222;
-      color: #ccc;
-      padding: 20px;
-      text-align: center;
-      margin-top: 40px;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Minha Loja Virtual</h1>
-  </header>
+<section class="produtos-section" style="padding: 60px 20px; background: #f7f7f7;">
+    <h2 style="text-align: center; font-size: 32px; font-weight: 700; margin-bottom: 40px;">
+        Produtos em Destaque
+    </h2>
 
-  <section class="banner">
-    <h2>Ofertas especiais hoje!</h2>
-    <p>Aproveite os melhores preços do mercado</p>
-  </section>
+    <div class="produtos-grid" style="
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    ">
 
-  <section class="produtos">
-    <div class="card">
-      <img src="https://via.placeholder.com/250" alt="Produto 1" />
-      <h3>Produto 1</h3>
-      <p>Descrição curta do produto.</p>
-      <button class="btn">Comprar</button>
+        <!-- CARD 1 -->
+        <div class="card" style="
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        ">
+            <img src="https://m.media-amazon.com/images/I/61sTGsGJE-L._AC_SL1500_.jpg" 
+                 alt="Produto Amazon" 
+                 style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
+            <h3 style="font-size: 20px; margin-bottom: 10px;">
+                Panela Antiaderente Premium 20cm
+            </h3>
+            <div style="color: #f2b01e; font-size: 20px; margin-bottom: 10px;">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <a href="https://amzn.to/4a0AaXc" target="_blank" style="
+                display: block;
+                text-align: center;
+                background: #000;
+                color: #fff;
+                padding: 12px 0;
+                border-radius: 10px;
+                font-weight: 600;
+                text-decoration: none;
+            ">Comprar na Amazon</a>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card" style="
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        ">
+            <img src="https://m.media-amazon.com/images/I/61kO-qfq5QL._AC_SL1350_.jpg" 
+                 alt="Produto Amazon" 
+                 style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
+            <h3 style="font-size: 20px; margin-bottom: 10px;">
+                Jogo de Panelas Antiaderentes 5 Peças
+            </h3>
+            <div style="color: #f2b01e; font-size: 20px; margin-bottom: 10px;">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <a href="https://amzn.to/4i66VnQ" target="_blank" style="
+                display: block;
+                text-align: center;
+                background: #000;
+                color: #fff;
+                padding: 12px 0;
+                border-radius: 10px;
+                font-weight: 600;
+                text-decoration: none;
+            ">Comprar na Amazon</a>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card" style="
+            background: #fff;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        ">
+            <img src="https://m.media-amazon.com/images/I/71JtKzmF5UL._AC_SL1500_.jpg" 
+                 alt="Produto Amazon" 
+                 style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
+            <h3 style="font-size: 20px; margin-bottom: 10px;">
+                Panela de Cerâmica Branca Premium 24cm
+            </h3>
+            <div style="color: #f2b01e; font-size: 20px; margin-bottom: 10px;">
+                ⭐⭐⭐⭐⭐
+            </div>
+            <a href="https://amzn.to/4o61TJG" target="_blank" style="
+                display: block;
+                text-align: center;
+                background: #000;
+                color: #fff;
+                padding: 12px 0;
+                border-radius: 10px;
+                font-weight: 600;
+                text-decoration: none;
+            ">Comprar na Amazon</a>
+        </div>
+
     </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/250" alt="Produto 2" />
-      <h3>Produto 2</h3>
-      <p>Descrição curta do produto.</p>
-      <button class="btn">Comprar</button>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/250" alt="Produto 3" />
-      <h3>Produto 3</h3>
-      <p>Descrição curta do produto.</p>
-      <button class="btn">Comprar</button>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 - Minha Loja Virtual</p>
-  </footer>
-</body>
-</html>
-
-</head>
-<body>
-  <header>
-    <h1>Minha Loja Virtual</h1>
-  </header>
-
-  <section class="banner">
-    <h2>Ofertas especiais hoje!</h2>
-    <p>Aproveite os melhores preços do mercado</p>
-  </section>
-
-  <section class="produtos">
-    <div class="card">
-      <img src="https://via.placeholder.com/250" alt="Produto 1" />
-      <h3>Produto 1</h3>
-      <p>Descrição curta do produto.</p>
-      <button class="btn">Comprar</button>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/250" alt="Produto 2" />
-      <h3>Produto 2</h3>
-      <p>Descrição curta do produto.</p>
-      <button class="btn">Comprar</button>
-    </div>
-    <div class="card">
-      <img src="https://via.placeholder.com/250" alt="Produto 3" />
-      <h3>Produto 3</h3>
-      <p>Descrição curta do produto.</p>
-      <button class="btn">Comprar</button>
-    </div>
-  </section>
-
-  <footer>
-    <p>© 2025 - Minha Loja Virtual</p>
-  </footer>
-</body>
-</html>
+</section>
