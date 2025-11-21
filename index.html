@@ -12,12 +12,12 @@
       margin: 0;
       padding: 0;
       font-family: 'Poppins', sans-serif;
-      background-color: #2a2a2a; /* cinza escuro */
-      color: #e0e0e0; /* cinza claro para texto */
+      background-color: #2a2a2a;
+      color: #e0e0e0;
     }
 
     header {
-      background: #111111; /* quase preto */
+      background: #111111;
       padding: 20px;
       text-align: center;
       font-size: 28px;
@@ -26,33 +26,15 @@
       color: #fff;
     }
 
-    .hero {
-      padding: 50px 20px;
-      text-align: center;
-      background: #333333; /* cinza médio escuro */
-    }
-
-    .hero h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    .hero p {
-      font-size: 18px;
-      opacity: 0.8;
-      color: #d5d5d5;
-    }
-
     .produtos {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr); /* 4 colunas */
       gap: 20px;
       padding: 40px;
     }
 
     .card {
-      background: #3a3a3a; /* cinza escuro para cards */
+      background: #3a3a3a;
       padding: 20px;
       border-radius: 12px;
       text-align: center;
@@ -72,7 +54,7 @@
 
     .btn {
       display: inline-block;
-      background: #b30000; /* vermelho forte para destacar botões */
+      background: #b30000;
       color: #ffffff;
       padding: 12px 18px;
       border-radius: 8px;
@@ -82,7 +64,7 @@
     }
 
     .btn:hover {
-      background: #e60000; /* vermelho mais claro no hover */
+      background: #e60000;
     }
 
     footer {
@@ -95,7 +77,6 @@
       color: #ccc;
     }
 
-    /* RESPONSIVO */
     @media (max-width: 1024px) {
       .produtos {
         grid-template-columns: repeat(2, 1fr);
@@ -112,61 +93,54 @@
 <body>
   <header>JR NOSSO LAR</header>
 
-  <section class="hero">
-    <h1>Loja Premium de Panelas</h1>
-    <p>Produtos de alta qualidade — seleção especial de panelas afiliadas Amazon.</p>
-  </section>
-
   <section class="produtos">
+    <!-- Produto 1: Oikos -->
     <div class="card">
-      <img src="https://via.placeholder.com/400x300?text=Panela+1" alt="Panela 1" />
-      <h3>Panela Premium Cerâmica</h3>
-      <a class="btn" href="https://amzn.to/3JMXJbA" target="_blank">Comprar na Amazon</a>
+      <img src="https://m.media-amazon.com/images/I/61rzwgW+ffL._AC_SL1500_.jpg" alt="Oikos Panela Antiaderente Elétrico Vitrocerâmico">
+      <h3>Oikos Panela Antiaderente Elétrico Vitrocerâmico</h3>
+      <a class="btn" href="https://www.amazon.com.br/Oikos-Panelas-Antiaderente-El%C3%A9trico-Vitrocer%C3%A2mico/dp/B0F2TS9YYZ?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
     </div>
 
+    <!-- Produto 2 -->
     <div class="card">
-      <img src="https://via.placeholder.com/400x300?text=Panela+2" alt="Panela 2" />
-      <h3>Conjunto Antiaderente</h3>
-      <a class="btn" href="#" target="_blank">Comprar na Amazon</a>
+      <img src="https://m.media-amazon.com/images/I/71+Zmi6gl+L._AC_SL1500_.jpg" alt="Oikos Jogo Panelas Antiaderentes Cerâmicos">
+      <h3>Oikos Jogo de Panelas Antiaderentes Cerâmicos</h3>
+      <a class="btn" href="https://www.amazon.com.br/Oikos-Antiaderentes-Revestimento-El%C3%A9tricos-Cer%C3%A2micos/dp/B0DLY6SLL2?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
     </div>
 
+    <!-- Produto 3 -->
     <div class="card">
-      <img src="https://via.placeholder.com/400x300?text=Panela+3" alt="Panela 3" />
-      <h3>Panela Inox Profissional</h3>
-      <a class="btn" href="#" target="_blank">Comprar na Amazon</a>
+      <img src="https://m.media-amazon.com/images/I/71jBjrZxX5L._AC_SL1500_.jpg" alt="Jogo de Panelas de Cerâmica ULTIVIGOR">
+      <h3>ULTVIGOR Panelas de Cerâmica Antiaderente</h3>
+      <a class="btn" href="https://www.amazon.com.br/ULTVIGOR-Panelas-Ceramica-Antiaderente-Saud%C3%A1vel/dp/B0FLWXZ4XV?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
     </div>
-  </section>
 
-  <section style="padding: 60px 20px; background: #2a2a2a;">
-    <h2 style="text-align: center; font-size: 32px; font-weight: 700; margin-bottom: 40px; color: #fff;">
-      Produtos em Destaque
-    </h2>
+    <!-- Produto 4 -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61aa0uBlR1L._AC_SL1500_.jpg" alt="Conjunto de Panelas Bianco Antiaderente">
+      <h3>Jogo de Panelas Bianco Antiaderente 6 Peças</h3>
+      <a class="btn" href="https://www.amazon.com.br/Panelas-Pe%C3%A7as-Bianco-Antiaderente-Tampa/dp/B0CZMK9X9B?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
+    </div>
 
-    <div style="
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-      max-width: 1200px;
-      margin: 0 auto;
-    ">
-      <!-- Card de destaque exemplo -->
-      <div class="card" style="background: #3a3a3a;">
-        <img src="https://m.media-amazon.com/images/I/61sTGsGJE-L._AC_SL1500_.jpg" alt="Panela Antiaderente" style="width:100%; border-radius:12px; margin-bottom:15px;">
-        <h3 style="color: #ffffff;">Panela Antiaderente Premium 20cm</h3>
-        <div style="color: #ff4d4d; font-size: 20px; margin-bottom: 10px;">⭐⭐⭐⭐⭐</div>
-        <a href="https://amzn.to/4a0AaXc" target="_blank" style="
-            display: block;
-            text-align: center;
-            background: #b30000;
-            color: #fff;
-            padding: 12px 0;
-            border-radius: 10px;
-            font-weight: 600;
-            text-decoration: none;
-        ">Comprar na Amazon</a>
-      </div>
+    <!-- Produto 5 -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61Xb9IoCWEL._AC_SL1500_.jpg" alt="Tramontina Panela de Alumínio Antiaderente">
+      <h3>Tramontina Panela Alumínio Starflon 22cm</h3>
+      <a class="btn" href="https://www.amazon.com.br/Tramontina-Alum%C3%ADnio-Revestimento-Antiaderente-Starflon/dp/B0CDR1SKHR?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
+    </div>
 
-      <!-- Você pode duplicar esse block para outros produtos -->
+    <!-- Produto 6 -->
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61L1c+8xKiL._AC_SL1500_.jpg" alt="Panela de Alumínio Revestimento Cerâmico Tuut">
+      <h3>Panela Alumínio Revestimento Cerâmico Tuut</h3>
+      <a class="btn" href="https://www.amazon.com.br/Alum%C3%ADnio-Revestimento-Cer%C3%A2mico-Antiaderente-Tuut/dp/B0FC89FYHP?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
+    </div>
+
+    <!-- Produto 7: outro exemplo fictício ou real, se tiver mais link -->
+    <div class="card">
+      <img src="https://via.placeholder.com/400x300?text=Produto+Extra" alt="Produto Extra">
+      <h3>Produto Extra</h3>
+      <a class="btn" href="#">Ver oferta</a>
     </div>
   </section>
 
