@@ -17,7 +17,7 @@
     }
 
     header {
-      background: #111111;
+      background: #111;
       padding: 20px;
       text-align: center;
       font-size: 28px;
@@ -26,11 +26,31 @@
       color: #fff;
     }
 
+    .hero {
+      padding: 50px 20px;
+      text-align: center;
+      background: #333;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.8;
+      color: #d5d5d5;
+    }
+
     .produtos {
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       padding: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
     }
 
     .card {
@@ -38,7 +58,7 @@
       padding: 20px;
       border-radius: 12px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
     .card img {
@@ -48,102 +68,22 @@
     }
 
     .card h3 {
+      color: #fff;
       margin-bottom: 10px;
-      color: #ffffff;
+      min-height: 55px;
     }
 
-    .btn {
-      display: inline-block;
-      background: #b30000;
-      color: #ffffff;
-      padding: 12px 18px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
+    .stars {
+      font-size: 20px;
+      color: #ff4d4d;
+      margin-bottom: 10px;
     }
 
-    .btn:hover {
-      background: #e60000;
-    }
-
-    footer {
-      background: #111111;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-      opacity: 0.8;
+    .desc {
       font-size: 14px;
-      color: #ccc;
+      opacity: .8;
+      margin-bottom: 15px;
+      min-height: 60px;
     }
 
-    @media (max-width: 1024px) {
-      .produtos {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 600px) {
-      .produtos {
-        grid-template-columns: repeat(1, 1fr);
-      }
-    }
-  </style>
-</head>
-<body>
-  <header>JR NOSSO LAR</header>
-
-  <section class="produtos">
-    <!-- Produto 1: Oikos -->
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/61rzwgW+ffL._AC_SL1500_.jpg" alt="Oikos Panela Antiaderente Elétrico Vitrocerâmico">
-      <h3>Oikos Panela Antiaderente Elétrico Vitrocerâmico</h3>
-      <a class="btn" href="https://www.amazon.com.br/Oikos-Panelas-Antiaderente-El%C3%A9trico-Vitrocer%C3%A2mico/dp/B0F2TS9YYZ?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
-    </div>
-
-    <!-- Produto 2 -->
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/71+Zmi6gl+L._AC_SL1500_.jpg" alt="Oikos Jogo Panelas Antiaderentes Cerâmicos">
-      <h3>Oikos Jogo de Panelas Antiaderentes Cerâmicos</h3>
-      <a class="btn" href="https://www.amazon.com.br/Oikos-Antiaderentes-Revestimento-El%C3%A9tricos-Cer%C3%A2micos/dp/B0DLY6SLL2?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
-    </div>
-
-    <!-- Produto 3 -->
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/71jBjrZxX5L._AC_SL1500_.jpg" alt="Jogo de Panelas de Cerâmica ULTIVIGOR">
-      <h3>ULTVIGOR Panelas de Cerâmica Antiaderente</h3>
-      <a class="btn" href="https://www.amazon.com.br/ULTVIGOR-Panelas-Ceramica-Antiaderente-Saud%C3%A1vel/dp/B0FLWXZ4XV?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
-    </div>
-
-    <!-- Produto 4 -->
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/61aa0uBlR1L._AC_SL1500_.jpg" alt="Conjunto de Panelas Bianco Antiaderente">
-      <h3>Jogo de Panelas Bianco Antiaderente 6 Peças</h3>
-      <a class="btn" href="https://www.amazon.com.br/Panelas-Pe%C3%A7as-Bianco-Antiaderente-Tampa/dp/B0CZMK9X9B?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
-    </div>
-
-    <!-- Produto 5 -->
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/61Xb9IoCWEL._AC_SL1500_.jpg" alt="Tramontina Panela de Alumínio Antiaderente">
-      <h3>Tramontina Panela Alumínio Starflon 22cm</h3>
-      <a class="btn" href="https://www.amazon.com.br/Tramontina-Alum%C3%ADnio-Revestimento-Antiaderente-Starflon/dp/B0CDR1SKHR?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
-    </div>
-
-    <!-- Produto 6 -->
-    <div class="card">
-      <img src="https://m.media-amazon.com/images/I/61L1c+8xKiL._AC_SL1500_.jpg" alt="Panela de Alumínio Revestimento Cerâmico Tuut">
-      <h3>Panela Alumínio Revestimento Cerâmico Tuut</h3>
-      <a class="btn" href="https://www.amazon.com.br/Alum%C3%ADnio-Revestimento-Cer%C3%A2mico-Antiaderente-Tuut/dp/B0FC89FYHP?tag=jrnossolar05-20" target="_blank">Ver oferta</a>
-    </div>
-
-    <!-- Produto 7: outro exemplo fictício ou real, se tiver mais link -->
-    <div class="card">
-      <img src="https://via.placeholder.com/400x300?text=Produto+Extra" alt="Produto Extra">
-      <h3>Produto Extra</h3>
-      <a class="btn" href="#">Ver oferta</a>
-    </div>
-  </section>
-
-  <footer>© 2025 JR Nosso Lar — Loja Premium</footer>
-</body>
-</html>
+    .b
