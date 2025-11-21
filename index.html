@@ -1,331 +1,175 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JR Nosso Lar - Loja Premium</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JR Nosso Lar - Loja Premium</title>
 
-    <!-- GOOGLE FONTS (Poppins) -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: #111;
-            color: #f2f2f2;
-        }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #2a2a2a; /* cinza escuro */
+      color: #e0e0e0; /* cinza claro para texto */
+    }
 
-        header {
-            background: #000;
-            padding: 20px;
-            text-align: center;
-            font-size: 28px;
-            font-weight: 700;
-            letter-spacing: 2px;
-        }
+    header {
+      background: #111111; /* quase preto */
+      padding: 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #fff;
+    }
 
-        .hero {
-            padding: 50px 20px;
-            text-align: center;
-            background: #1a1a1a;
-        }
+    .hero {
+      padding: 50px 20px;
+      text-align: center;
+      background: #333333; /* cinza médio escuro */
+    }
 
-        .hero h1 {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
 
-        .hero p {
-            font-size: 18px;
-            opacity: 0.8;
-        }
+    .hero p {
+      font-size: 18px;
+      opacity: 0.8;
+      color: #d5d5d5;
+    }
 
-        .produtos {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 40px;
-        }
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
 
-        .card {
-            background: #222;
-            padding: 20px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 0 10px rgba(0,0,0,0.4);
-        }
+    .card {
+      background: #3a3a3a; /* cinza escuro para cards */
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
 
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
 
-        .card h3 {
-            margin-bottom: 10px;
-        }
+    .card h3 {
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
 
-        .btn {
-            display: inline-block;
-            background: #333;
-            color: #fff;
-            padding: 12px 18px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
-        }
+    .btn {
+      display: inline-block;
+      background: #b30000; /* vermelho forte para destacar botões */
+      color: #ffffff;
+      padding: 12px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
 
-        .btn:hover {
-            background: #555;
-        }
+    .btn:hover {
+      background: #e60000; /* vermelho mais claro no hover */
+    }
 
-        footer {
-            background: #000;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            opacity: 0.6;
-            font-size: 14px;
-        }
-    
-        /* RESPONSIVO */
-        @media (max-width: 1024px) {
-            .produtos-grid {
-                grid-template-columns: repeat(2, 1fr) !important;
-            }
-        }
+    footer {
+      background: #111111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      opacity: 0.8;
+      font-size: 14px;
+      color: #ccc;
+    }
 
-        @media (max-width: 600px) {
-            .produtos-grid {
-                grid-template-columns: repeat(1, 1fr) !important;
-            }
-        }
-    </style>
+    /* RESPONSIVO */
+    @media (max-width: 1024px) {
+      .produtos {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .produtos {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>JR NOSSO LAR</header>
 
-<header>JR NOSSO LAR</header>
-
-<section class="hero">
+  <section class="hero">
     <h1>Loja Premium de Panelas</h1>
     <p>Produtos de alta qualidade — seleção especial de panelas afiliadas Amazon.</p>
-</section>
+  </section>
 
-<section class="produtos">
+  <section class="produtos">
     <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Panela+1" />
-        <h3>Panela Premium Cerâmica</h3>
-        <a class="btn" href="https://amzn.to/3JMXJbA" target="_blank">Comprar na Amazon</a>
+      <img src="https://via.placeholder.com/400x300?text=Panela+1" alt="Panela 1" />
+      <h3>Panela Premium Cerâmica</h3>
+      <a class="btn" href="https://amzn.to/3JMXJbA" target="_blank">Comprar na Amazon</a>
     </div>
 
     <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Panela+2" />
-        <h3>Conjunto Antiaderente</h3>
-        <a class="btn" href="#">Comprar na Amazon</a>
+      <img src="https://via.placeholder.com/400x300?text=Panela+2" alt="Panela 2" />
+      <h3>Conjunto Antiaderente</h3>
+      <a class="btn" href="#" target="_blank">Comprar na Amazon</a>
     </div>
 
     <div class="card">
-        <img src="https://via.placeholder.com/400x300?text=Panela+3" />
-        <h3>Panela Inox Profissional</h3>
-        <a class="btn" href="#">Comprar na Amazon</a>
+      <img src="https://via.placeholder.com/400x300?text=Panela+3" alt="Panela 3" />
+      <h3>Panela Inox Profissional</h3>
+      <a class="btn" href="#" target="_blank">Comprar na Amazon</a>
     </div>
-</section>
+  </section>
 
-<footer>© 2025 JR Nosso Lar — Loja Premium</footer>
-
-
-<!-- PRODUTOS PREMIUM -->
-<section class="produtos-section" style="padding: 60px 20px; background: #f7f7f7; color:#000;">
-    <h2 style="text-align: center; font-size: 32px; font-weight: 700; margin-bottom: 40px;">
-        Produtos em Destaque
+  <section style="padding: 60px 20px; background: #2a2a2a;">
+    <h2 style="text-align: center; font-size: 32px; font-weight: 700; margin-bottom: 40px; color: #fff;">
+      Produtos em Destaque
     </h2>
 
-    <div class="produtos-grid" style="
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto;
+    <div style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
     ">
+      <!-- Card de destaque exemplo -->
+      <div class="card" style="background: #3a3a3a;">
+        <img src="https://m.media-amazon.com/images/I/61sTGsGJE-L._AC_SL1500_.jpg" alt="Panela Antiaderente" style="width:100%; border-radius:12px; margin-bottom:15px;">
+        <h3 style="color: #ffffff;">Panela Antiaderente Premium 20cm</h3>
+        <div style="color: #ff4d4d; font-size: 20px; margin-bottom: 10px;">⭐⭐⭐⭐⭐</div>
+        <a href="https://amzn.to/4a0AaXc" target="_blank" style="
+            display: block;
+            text-align: center;
+            background: #b30000;
+            color: #fff;
+            padding: 12px 0;
+            border-radius: 10px;
+            font-weight: 600;
+            text-decoration: none;
+        ">Comprar na Amazon</a>
+      </div>
 
-        <!-- CARD 1 -->
-        <div class="card" style="
-            background: #fff;
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-            transition: 0.3s;
-        ">
-            <img src="https://m.media-amazon.com/images/I/61sTGsGJE-L._AC_SL1500_.jpg" 
-                 alt="Produto Amazon" 
-                 style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
-            <h3 style="font-size: 20px; margin-bottom: 10px;">
-                Panela Antiaderente Premium 20cm
-            </h3>
-            <div style="color: #f2b01e; font-size: 20px; margin-bottom: 10px;">
-                ⭐⭐⭐⭐⭐
-            </div>
-            <a href="https://amzn.to/4a0AaXc" target="_blank" style="
-                display: block;
-                text-align: center;
-                background: #000;
-                color: #fff;
-                padding: 12px 0;
-                border-radius: 10px;
-                font-weight: 600;
-                text-decoration: none;
-            ">Comprar na Amazon</a>
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="card" style="
-            background: #fff;
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-            transition: 0.3s;
-        ">
-            <img src="https://m.media-amazon.com/images/I/61kO-qfq5QL._AC_SL1350_.jpg" 
-                 alt="Produto Amazon" 
-                 style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
-            <h3 style="font-size: 20px; margin-bottom: 10px;">
-                Jogo de Panelas Antiaderentes 5 Peças
-            </h3>
-            <div style="color: #f2b01e; font-size: 20px; margin-bottom: 10px;">
-                ⭐⭐⭐⭐⭐
-            </div>
-            <a href="https://amzn.to/4i66VnQ" target="_blank" style="
-                display: block;
-                text-align: center;
-                background: #000;
-                color: #fff;
-                padding: 12px 0;
-                border-radius: 10px;
-                font-weight: 600;
-                text-decoration: none;
-            ">Comprar na Amazon</a>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="card" style="
-            background: #fff;
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-            transition: 0.3s;
-        ">
-            <img src="https://m.media-amazon.com/images/I/71JtKzmF5UL._AC_SL1500_.jpg" 
-                 alt="Produto Amazon" 
-                 style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
-            <h3 style="font-size: 20px; margin-bottom: 10px;">
-                Panela de Cerâmica Branca Premium 24cm
-            </h3>
-            <div style="color: #f2b01e; font-size: 20px; margin-bottom: 10px;">
-                ⭐⭐⭐⭐⭐
-            </div>
-            <a href="https://amzn.to/4o61TJG" target="_blank" style="
-                display: block;
-                text-align: center;
-                background: #000;
-                color: #fff;
-                padding: 12px 0;
-                border-radius: 10px;
-                font-weight: 600;
-                text-decoration: none;
-            ">Comprar na Amazon</a>
-                <!-- CARD 4 -->
-        <div class="card" style="
-            background: #fff;
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-            transition: 0.3s;
-        ">
-            <img src="https://m.media-amazon.com/images/I/71d3FoZT3zL._AC_SL1500_.jpg" 
-                 alt="Produto Amazon" 
-                 style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
-            <h3 style="font-size: 20px; margin-bottom: 10px;">
-                Jogo de Panelas Garlic Pro Flon Brinox
-            </h3>
-            <div style="color: #f2b01e; font-size: 20px; margin-bottom: 10px;">
-                ⭐⭐⭐⭐⭐
-            </div>
-            <a href="https://www.amazon.com.br/Panelas-Garlic-Pro-flon-Antiaderente-Brinox/dp/B01MY00D73?tag=jrnossolar05-20" target="_blank" style="
-                display: block;
-                text-align: center;
-                background: #000;
-                color: #fff;
-                padding: 12px 0;
-                border-radius: 10px;
-                font-weight: 600;
-                text-decoration: none;
-            ">Comprar na Amazon</a>
-        </div>
-
-        <!-- CARD 5 -->
-        <div class="card" style="
-            background: #fff;
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-            transition: 0.3s;
-        ">
-            <img src="https://m.media-amazon.com/images/I/61y9z35vjxL._AC_SL1500_.jpg" 
-                 alt="Produto Amazon" 
-                 style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
-            <h3 style="font-size: 20px; margin-bottom: 10px;">
-                Frigideira Antiaderente 24cm Premium
-            </h3>
-            <div style="color: #f2b01e; font-size: 20px; margin-bottom: 10px;">
-                ⭐⭐⭐⭐⭐
-            </div>
-            <a href="https://www.amazon.com.br/dp/B08NPLRDRV?tag=jrnossolar05-20" target="_blank" style="
-                display: block;
-                text-align: center;
-                background: #000;
-                color: #fff;
-                padding: 12px 0;
-                border-radius: 10px;
-                font-weight: 600;
-                text-decoration: none;
-            ">Comprar na Amazon</a>
-        </div>
-
-        <!-- CARD 6 -->
-        <div class="card" style="
-            background: #fff;
-            border-radius: 16px;
-            padding: 20px;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-            transition: 0.3s;
-        ">
-            <img src="https://m.media-amazon.com/images/I/71tPvxI6RwL._AC_SL1500_.jpg" 
-                 alt="Produto Amazon" 
-                 style="width: 100%; border-radius: 12px; margin-bottom: 15px;">
-            <h3 style="font-size: 20px; margin-bottom: 10px;">
-                Panela Wok Antiaderente Premium
-            </h3>
-            <div style="color: #f2b01e; font-size: 20px; margin-bottom: 10px;">
-                ⭐⭐⭐⭐⭐
-            </div>
-            <a href="https://www.amazon.com.br/dp/B083RZ1WGX?tag=jrnossolar05-20" target="_blank" style="
-                display: block;
-                text-align: center;
-                background: #000;
-                color: #fff;
-                padding: 12px 0;
-                border-radius: 10px;
-                font-weight: 600;
-                text-decoration: none;
-            ">Comprar na Amazon</a>
-        </div>
-
+      <!-- Você pode duplicar esse block para outros produtos -->
     </div>
-</div>
-</section>
+  </section>
 
+  <footer>© 2025 JR Nosso Lar — Loja Premium</footer>
 </body>
 </html>
